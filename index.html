@@ -16,6 +16,11 @@
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
+<script>
+    function handleDisable(elm) {
+        document.getElementsByName('Sumbit1')[0].disabled = !elm.checked;
+    }
+</script>
 <body>
     <!--contains all the div-->
     <div id="all">
@@ -503,7 +508,9 @@
                     </div>
                     <input type="text" id="subject" placeholder="subject" class="input-subject">
                     <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="submit" id ="submit" value="send">Submit</button>
+                    <div class="input-line1">
+                    <input type="checkbox"  id="agree" name="agree" value="Yes" onclick="handleDisable(this)"><label class="tandc" for="agree1"> By submitting you agree to receive SMS, <a href="./termandcon.html"> T&C </a> may apply.</label></div>
+                    <button type="submit" id ="submit" value="send" name="Sumbit1" disabled>Submit</button>
                  </form>
                
              </div>
@@ -513,7 +520,7 @@
                 <div class="contact-info-header">
                     Contact Info
                 </div>
-                <div class="contact-info-icon-text"><h6>Transform your recruitment outcomes and enhance your business advantages with Orion's Recruitment Process Outsourcing (RPO).<br> Learn about the benefits for talent acquisition and financial gains by contacting us at (307) 776-9651. <br>If you require information about an RPO Request for Proposal (RFP), please reach out to us via email.
+                <div class="contact-info-icon-text"><h6>Transform your recruitment outcomes and enhance your business advantages with ARS Global Infotech's Recruitment Process Outsourcing (RPO). Learn about the benefits for talent acquisition and financial gains by contacting us at (307) 342-8914. If you require information about an RPO Request for Proposal (RFP), please reach out to us via email.
                 </h6></div>
                 <!--<div class="contact-info-content">
                 <div class="contect-info-content-line">
@@ -522,19 +529,19 @@
                         <h6>Name</h6>
                         <p>ARS Global Infotech</p>
                   </div>
-                </div>
+                </div>-->
                 <div class="contect-info-content-line">
                   <img src="./images/icon-location.png" class="icon" alt="location-icon">
                   <div class="contact-info-icon-text">
                       <h6>Location</h6>
-                      <p>Pune, India</p>
+                      <p>30 N Gould ST, SUITE R, Sheridan, Wyoming 82801</p>
                 </div>
-              </div>-->
+              </div>
               <div class="contect-info-content-line">
                   <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
                   <div class="contact-info-icon-text">
                       <h6>Call</h6>
-                      <p>+1 (307) 776-9651</p>
+                      <p>+1 (307) 342-8914</p>
                 </div>
               </div>
               
@@ -549,7 +556,7 @@
             <!--Contact information end-->
            </div>
         </div>
-                    <!--copyright-section You Can Remove After Downloading-->
+                    <!--copyright-section -->
                     <div class="footer">
                         <div class="footer-text">
                             <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> ARS Global Infotech
