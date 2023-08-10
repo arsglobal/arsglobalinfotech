@@ -551,6 +551,11 @@ body{
     opacity: 1;
     transform: scale(1.05);
 }
+.cv a button:disabled{
+    border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 #services{
     position: relative;
 }
@@ -1210,7 +1215,7 @@ form button{
     border-radius: 8px;
     transition: all .4s ease;
 }
-button:disabled,
+form button:disabled,
 button[disabled]{
   border: 1px solid #999999;
   background-color: #cccccc;
@@ -1763,6 +1768,14 @@ For devices with smaller width like mobile phone
                 align-items: center;
                 justify-content: center;
             }
+            .input-line1{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
             .input-name{
                 width: 90%;
                 padding:10px 20px;
@@ -1822,6 +1835,11 @@ For devices with smaller width like mobile phone
             }
             form button:hover{
               opacity: 1;
+            }
+            form button:disabled{
+                border: 1px solid #999999;
+                background-color: #cccccc;
+                color: #666666;
             }
             .contact-info-header{
                 position: relative;
@@ -2235,6 +2253,14 @@ for tabs and large phones
                 align-items: center;
                 justify-content: center;
             }
+            .input-line1{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
             .input-name{
                 width: 80%;
                 padding:10px 20px;
@@ -2294,6 +2320,11 @@ for tabs and large phones
             }
             form button:hover{
               opacity: 1;
+            }
+            form button:disabled{
+                border: 1px solid #999999;
+                background-color: #cccccc;
+                color: #666666;
             }
             .contact-info-header{
                 position: relative;
@@ -2558,6 +2589,14 @@ for tabs and large phones
         height: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-line1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
     }
