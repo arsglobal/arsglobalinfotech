@@ -1138,6 +1138,14 @@ form{
     align-items: center;
     justify-content: center;
 }
+.input-line1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .input-name{
     width: 40%;
     padding:10px 20px;
@@ -1156,6 +1164,13 @@ form{
     font-weight: 400;
     color: whitesmoke;
     padding: 28px;
+}
+.tandc{
+    font-size: 12px;
+    font-family: poppins;
+    font-weight: 200;
+    color: whitesmoke;
+    padding: 2px;
 }
 .input-subject{
     width: 84%;
@@ -1195,6 +1210,13 @@ form button{
     border-radius: 8px;
     transition: all .4s ease;
 }
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 form button:hover{
   opacity: 1;
 }
